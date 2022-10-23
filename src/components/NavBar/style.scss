@@ -1,0 +1,16 @@
+@import "../../common/colors.scss";
+.nav-wrapper
+{
+  padding: 0 10%;
+}
+.navbar-nav li {
+   margin: 0 20px;
+  
+   a {
+  color: $primary-color !important;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+}

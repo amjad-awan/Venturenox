@@ -1,0 +1,58 @@
+@import "../../common/colors.scss";
+.header-wrapper {
+  min-height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  div {
+    flex: 1 1 20rem;
+  }
+
+  div:first-child {
+    background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)),
+      url("../../images/header.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white-color;
+    font-family: "Manrope";
+    font-weight: 800;
+    font-size: 64px;
+  }
+
+  .header-right-side {
+    background-color: $primary-color;
+    // height: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .right-side-heading {
+      font-family: "Manrope";
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 140%;
+      color: $white-color;
+    }
+  }
+
+  .header-right-side p {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px !important;
+    line-height: 175%;
+    color: $white-color;
+  }
+}
+
+@media only screen and(max-width:768px) {
+  .header-wrapper div:first-child {
+    min-height: 200px;
+  }
+}
